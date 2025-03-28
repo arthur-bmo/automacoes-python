@@ -173,4 +173,4 @@ Para ver o script completo e comentado, acesse: `scripts/relatorio_de_horas.gs`
 
 ---
 
-> Nada disso seria necessário se os sistemas fossem bem-feitos. Como não são, o jeito é automatizar.
+> “I choose a lazy person to do a hard job. Because a lazy person will find an easy way to do it.” -Bill Gates
