@@ -18,10 +18,10 @@ for link in links_projeto:
         EC.presence_of_element_located((By.ID, 'id_username'))
     )
 
-    username_input.send_keys('contas.ufv-fibras')
+    username_input.send_keys('usuario')
 
     password_input = driver.find_element(By.ID, 'id_password')
-    password_input.send_keys('Embrapii07')
+    password_input.send_keys('senha')
 
     entrar_botao = driver.find_element(By.CLASS_NAME, 'btn-primary')
     entrar_botao.click()

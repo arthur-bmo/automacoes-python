@@ -8,8 +8,8 @@ def baixa_planilha_clientes(path):
     # Correct URL for listing clients
     url = "https://app.omie.com.br/api/v1/geral/clientes/"
 
-    app_key = "4808114525214"
-    app_secret = "151a67b9de7bcd84b38307ecb14d2fcb"
+    app_key = "app_key"
+    app_secret = "app_secret"
 
     headers = {
         "Content-Type": "application/json"

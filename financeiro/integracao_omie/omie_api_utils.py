@@ -1,5 +1,6 @@
 import requests
 import json
+import re
 
 def encontra_codigo_cliente(favorecido, cpfpj, lista_clientes):
     clientes = lista_clientes['nome_fantasia'].tolist()
