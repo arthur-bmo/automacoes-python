@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Relatório de Horas - <?= mesAnterior ?></title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        line-height: 1.4;
+      }
+      h1, h2 {
+        text-align: center;
+      }
+      table {
+        width: 83%;
+        margin: 20px auto;
+        border-collapse: collapse;
+        margin-bottom: 0 auto 40px;
+      }
+      th, td {
+        border: 1px solid #333;
+        padding: 8px;
+        text-align: center;
+      }
+      th {
+        background-color: #00008B;
+        color: #fff;
+      }
+      .summary-table {
+        margin-bottom: 40px;
+      }
+      .employee-section {
+        page-break-after: always;
+        margin-top: 40px;
+        padding-left: 60px;
+      }
+      .signature {
+        margin-top: 60px;
+        text-align: center;
+      }
+      .signature .line {
+        border-top: 1px solid #000;
+        width: 50%;
+        margin: 5px auto;
+      }
+      .signature .name {
+        margin: 0;
+      }
+      .fixed-signatures {
+        margin-top: 20px;
+        text-align: center;
+      }
+      .fixed-signatures .signature-block {
+        display: inline-block;
+        width: 45%;
+        vertical-align: top;
+      }
+      .fixed-signatures .signature-block .line {
+        border-top: 1px solid #000;
+        margin: 5px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <h1>Relatório de Horas de <?= mesAnterior ?></h1>
+    
+    <h2>Resumo dos Funcionários</h2>
+    <table class="summary-table">
+      <tr>
+        <th>Funcionário</th>
+        <th>Tipo</th>
+        <th>Horas</th>
+      </tr>
+      <? for (var i = 0; i < summary.length; i++) { ?>
+        <tr>
+          <? for (var j = 0; j < summary[i].length; j++) { ?>
+            <td><?= summary[i][j] ?></td>
+          <? } ?>
+        </tr>
+      <? } ?>
+    </table>
+    
+    <? for (var i = 0; i < employees.length; i++) { 
+         var emp = employees[i];
+    ?>
+      <div class="employee-section">
+        <h2>Atividades de <?= emp.nome ?></h2>
+        <p><strong>Cargo:</strong> <?= emp.cargo ?></p>
+        <table>
+          <? for (var j = 0; j < emp.atividades.length; j++) { 
+               var row = emp.atividades[j];
+          ?>
+            <? if (j === 0) { ?>
+              <tr>
+                <? for (var k = 0; k < row.length; k++) { ?>
+                  <th><?= row[k] ?></th>
+                <? } ?>
+              </tr>
+            <? } else { ?>
+              <tr>
+                <? for (var k = 0; k < row.length; k++) { ?>
+                  <td><?= row[k] ?></td>
+                <? } ?>
+              </tr>
+            <? } ?>
+          <? } ?>
+        </table>
+        <!-- Campo para assinatura do funcionário -->
+        <div class="signature">
+          <div class="line"></div>
+          <p class="name"><?= emp.nome ?></p>
+          <p><?= emp.cargo ?></p>
+        </div>
+        <!-- Campos fixos de assinatura -->
+        <div class="fixed-signatures">
+          <div class="signature-block">
+            <div class="line"></div>
+            <p>Cíntia</p>
+            <p>Coordenação de contratos</p>
+          </div>
+          <div class="signature-block">
+            <div class="line"></div>
+            <p>Gleison</p>
+            <p>Diretor executivo</p>
+          </div>
+        </div>
+      </div>
+    <? } ?>
+    
+  </body>
+</html>
