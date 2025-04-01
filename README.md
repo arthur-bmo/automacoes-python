@@ -155,21 +155,11 @@ function relatorio_de_horas() {
 
 Para ver o script completo e comentado, acesse: `scripts/relatorio_de_horas.gs`
 
-## 📁 Estrutura Sugerida
-
-- `docs/`: Modelos e documentos gerados
-- `pdf_tools/`: Scripts de manipulação de PDF
-- `emails/`: Envio de e-mails com base em planilhas
-- `omie/`: Integração com a API do Omie
-- `conveniar/`: Download automatizado e tratamento de prestações de contas
-- `tk_gui/`: Scripts com interfaces visuais
-- `utils/`: Funções auxiliares reutilizáveis
-
 ## 🛠 Requisitos
 
 - Python 3.10+
 - `selenium`, `pandas`, `xlwings`, `PyPDF2`, `python-docx`, `gspread`, `reportlab`
-- (Opcional) Credenciais Google API para integração com Google Sheets
+- Credenciais Google API para integração com Google Sheets
 
 ---
 
