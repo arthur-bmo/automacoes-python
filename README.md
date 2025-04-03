@@ -145,7 +145,7 @@ function relatorio_de_horas() {
 }
 ```
 
-Para ver o script completo e comentado, acesse: `scripts/relatorio_de_horas.gs`
+Para ver o script completo e comentado, acesse: `automacoes-python/apps_script/preenche_relatorio_de_horas.js`
 
 ## 🛠 Requisitos
 
