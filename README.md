@@ -9,14 +9,6 @@ Este repositório reúne scripts criados para automatizar tarefas administrativa
 - Download automatizado de arquivos e relatórios com uso de Selenium
 - Manipulação de PDFs (divisão, junção, anotações dinâmicas)
 - Integração com Google Sheets e APIs externas
-- Scripts com interfaces Tkinter para uso por pessoas sem experiência com código
-
-## 🧠 Filosofia
-
-Cada script aqui foi criado para resolver um problema real, com foco em:
-- Reduzir o tempo gasto com tarefas mecânicas
-- Garantir consistência nos processos
-- Tornar acessível o uso de ferramentas automatizadas para quem não programa
 
 ## 💻 Exemplo de Script (Google Apps Script)
 
